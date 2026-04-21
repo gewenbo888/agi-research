@@ -14,9 +14,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AGI Research Lab",
+  metadataBase: new URL("https://agi.psyverse.fun"),
+  title: "AGI Research Lab — Paths to Artificial General Intelligence",
   description:
-    "AI-powered research assistant exploring Artificial General Intelligence",
+    "AI-powered research assistant exploring Artificial General Intelligence — curated papers, labs, and the open problems ahead.",
+  keywords: ["AGI", "artificial general intelligence", "AI research", "machine learning", "AI safety"],
+  authors: [{ name: "Gewenbo", url: "https://psyverse.fun" }],
+  alternates: {
+    canonical: "/",
+    languages: { en: "/", "zh-CN": "/", "x-default": "/" },
+  },
+  openGraph: {
+    title: "AGI Research Lab",
+    description: "Paths to Artificial General Intelligence — papers, labs, open problems.",
+    url: "https://agi.psyverse.fun/",
+    siteName: "Psyverse",
+    type: "website",
+    locale: "en_US",
+    alternateLocale: ["zh_CN"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AGI Research Lab",
+    description: "Paths to Artificial General Intelligence.",
+  },
+  robots: { index: true, follow: true },
+  other: { "theme-color": "#0f172a" },
 };
 
 export default function RootLayout({
