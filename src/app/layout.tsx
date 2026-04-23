@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     languages: { en: "/", "zh-CN": "/", "x-default": "/" },
   },
   openGraph: {
+    images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: "AGI Research" }],
     title: "AGI Research Lab",
     description: "Paths to Artificial General Intelligence — papers, labs, open problems.",
     url: "https://agi.psyverse.fun/",
@@ -34,6 +35,7 @@ export const metadata: Metadata = {
     alternateLocale: ["zh_CN"],
   },
   twitter: {
+    images: ["/twitter-image.png"],
     card: "summary_large_image",
     title: "AGI Research Lab",
     description: "Paths to Artificial General Intelligence.",
